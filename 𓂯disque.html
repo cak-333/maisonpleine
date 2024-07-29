@@ -1,0 +1,359 @@
+<!--                                    :                                                          
+                                           ..                                                       
+                                            ..:.         :*##=.                                     
+                                               .:.   :#@@@@%##*-.                   .    ...        
+                                                 .=*@@@@#=#@@#+:   .......  ...::   .....           
+                                                +@@@@@#+#@%*+=:.....................                
+                                       ...:-=--#@@@@%*%#%@#+-::.....                                
+                             ..-::.....::::::-@@%#+=#@@@%+=-.                                       
+                        ::   ..:::::---:::.:-##%%@@@@#+-:.::=:.                                     
+               .-=.   ..........    .     ...+++%@#=:.      .:=:.                                   
+     .:.     ..........                  : ..:-=+=:           ..:-.                                 
+     ..........                         : ... .-:.               .-=.                               
+                                     =-:....   .-..                .::.                             
+                                       .:..     .=:.                 ..:.                           
+                                                 ...                    .:.                         
+                                                                          .:.                       
+                                                                            .:.                     
+                                                                              ...                   
+
+https://soundcloud.com/ccctxt-3431/sets/matrice-maisonpleine?si=5ab322106a474b7c830e4484f2bd64f0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing-->
+
+<!doctype html>
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Maison Pleine</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="꧁chair꧂/𓅸hôte (accueil)/gif/𓅸hôte_soleil.1.gif">
+    <link rel="stylesheet" href="assets/css/principal copy.css">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,700' rel='stylesheet' type='text/css'>
+    <script src="assets/js/script-ck.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background: transparent;
+            cursor : crosshair
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; 
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px; 
+        }
+        
+        .nom {
+            font-size: 36px; 
+            font-weight: bold;
+            color: black; 
+            margin-top: 20px; 
+            text-align: center;
+            position: fixed; 
+            top: 20px;
+            left: 20px; 
+            writing-mode: vertical-lr; 
+            text-orientation: upright; 
+            cursor : inherit
+            z-index: 10000; 
+            animation: colorChange 2s infinite, move 4s infinite; 
+           
+        }
+
+        .nom:hover {
+            background-color : white;
+
+        }
+        
+        @keyframes colorChange {
+            0% { color: black; }
+            50% { color: red; }
+            100% { color: white; }
+        }
+
+        @keyframes move {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(20px); }
+        }
+        
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            padding: 10px 0;
+            z-index: 1001; 
+        }
+        .menu-item {
+            margin: 0 10px;
+            font-size: 16px; 
+            font-weight: bold; 
+            color: white; 
+            background-color : red;
+            text-decoration: none; 
+            position: relative; 
+        }
+        .menu-item:hover {
+            font-style: italic;
+            text-decoration: underline;
+            color: red; 
+            background-color : white;
+            cursor : cell
+        }
+        .img, .imgportrait {
+            position: absolute;
+            top: calc(100% + 10px); 
+            left: 50%;
+            transform: translateX(-50%);
+            display: none; 
+            text-align: center; 
+            z-index: 10; 
+            cursor : move
+        }
+        .img img, .imgportrait img {
+            max-width: 100px; 
+            height: auto;
+            cursor : move
+        }
+
+        .menu-item:hover .img, .menu-item:hover .imgportrait {
+            display: block; 
+        }
+        .menu-item:hover .img, .menu-item:hover .imgportrait {
+            display: block; 
+        }
+        
+        
+        .gallery, .portrait-gallery, .landscape-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            cursor : move
+            z-index: 15; 
+        }
+        .gallery-item {
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+            width:250; 
+            height: 250px; 
+            cursor : move
+        }
+        .gallery-item img {
+            transition: transform 0.5s;
+            width: auto;
+            height: 100%;
+            cursor : move
+        }
+        .gallery-item:hover img {
+            transform: scale(2); 
+            cursor : move
+        }
+        
+        
+        
+        .text-zone {
+            width: 60%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 300px;
+            text-align: center;
+            padding: 10px;
+            z-index: 5000; 
+        }
+        .text-zone p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: red; 
+        
+        }
+
+            .lienmega {
+            margin: 100px;
+            font-size: 20px; 
+            color: red; 
+            background-color : white;
+            text-decoration: none; 
+            position: relative; 
+        }
+        .lienmega:hover {
+            font-style: italic;
+            text-decoration: underline;
+            color: white; 
+            background-color : red;
+            cursor : alias
+            
+        }
+
+
+
+
+        
+        .large-images img {
+            position: absolute;
+            width: 400px; 
+            height: auto;
+            z-index: 0; 
+        } 
+
+
+        
+        footer a {
+            margin: 20px;
+            font-size: 12px;
+            color: white;
+            text-decoration: line-through;
+            justify-content: right;
+        }
+        footer a:hover {
+            color: red;
+            text-decoration: underline overline;
+        }
+        .button-container {
+    position: fixed;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    animation: buttonMove 4s infinite; 
+}
+
+@keyframes buttonMove {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(20px); }
+}
+
+.open-video-button {
+    width: 50px;
+    height: 50px;
+    cursor : alias
+}
+    
+    </style>
+</head>
+<body>
+    <!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="꧁chair꧂/𓂯disque (boîte)/𑙦rendus/𓂯disque_𑙦rendu_page.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <header>
+        <div class="nom">
+            <a href="𓅸hôte.html" style="color: inherit; text-decoration: none;">Maison Pleine</a>
+        </div>
+    </header>
+    
+   
+    <div class="large-images">
+        <img src="꧁chair꧂/𓂯disque (boîte)/img/f/𓂯disque_f.1.jpg" alt="f.1" style="top: 0%; left: 10%;">
+        
+        <img src="꧁chair꧂/𓂯disque (boîte)/img/f/𓂯disque_f.3.jpg" alt="f.3" style="bottom: 0%; left: 10%;">
+        
+        <img src="꧁chair꧂/𓂯disque (boîte)/img/f/𓂯disque_f.2.jpg" alt="f.2" style="top: 80%; left: 80%; transform: translate(-50%, -50%);">
+        
+    </div>
+
+   
+    <div class="menu">
+        <a href="𓂯inventaire.html" class="menu-item">inventaire
+            <div class="img">
+                <img src="꧁chair꧂/𓂯inventaire (cartes)/img/f/𓂯inventaire_f.2.jpg" alt="cartes">
+            </div>
+        </a>
+        <a href="𓂯disque.html" class="menu-item">disque
+            <div class="imgportrait">
+                <img src="꧁chair꧂/𓂯disque (boîte)/img/f/𓂯disque_f.3.jpg" alt="boîte">
+            </div>
+        </a>
+        <a href="𓂯protocole.html" class="menu-item">protocole
+            <div class="imgportrait">
+                <img src="꧁chair꧂/𓂯protocole (notice)/img/f/𓂯protocole_f.1.jpg" alt="notice">
+            </div>
+        </a>
+        <a href="𓂯attributs.html" class="menu-item">attributs
+            <div class="img">
+                <img src="꧁chair꧂/𓂯attributs (affiches1)/img/f/𓂯attributs_f.9.jpg" alt="affichettes">
+            </div>
+        </a>
+        <a href="𓂯épisodes.html" class="menu-item">épisodes
+            <div class="img">
+                <img src="꧁chair꧂/𓂯épisodes (prints)/img/f/𓂯épisodes_f_﴾TT𛱁18𛱁1𛱁13𛱁15𛱁18𛱁16𛱁8𛱁5﴿ YYY.4.jpg" alt="prints">
+            </div>
+        </a>
+        <a href="𓂯synthèse.html" class="menu-item">synthèse
+            <div class="imgportrait">
+                <img src="꧁chair꧂/𓂯synthèse (fanzine)/img/f/𓂯synthèse_5.jpg" alt="fanzine">
+            </div>
+        </a>
+    </div>
+    
+
+
+    
+        <div class="landscape-gallery">
+            <div class="gallery-item">
+                <img src="꧁chair꧂/𓂯disque (boîte)/img/jpg/𓂯disque_inside.jpg" alt="inside">
+            </div>
+
+            <div class="gallery-item">
+                <img src="꧁chair꧂/𓂯disque (boîte)/img/jpg/𓂯disque_outside.jpg" alt="soutside">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="꧁chair꧂/𓂯disque (boîte)/img/scan/𓂯disque_scan_1.jpg" alt="scan.1">
+            </div>
+            <div class="gallery-item">
+                <img src="꧁chair꧂/𓂯disque (boîte)/img/scan/𓂯disque_scan_2.jpg" alt="scan.2">
+            </div>
+            <div class="gallery-item">
+                <img src="꧁chair꧂/𓂯disque (boîte)/img/scan/𓂯disque_scan_3.jpg" alt="scan.3">
+            </div>
+            
+            
+        </div>
+
+
+        
+       
+        <div class="text-zone">
+            <p>
+Si vous voulez changer d’avis, ce n’est pas grave, alors relâchez immédiatement le bébé bug dès son apparition. Regardez autour de vous, il y a un rat aveugle à quelques mètres. Le soleil est à la maison. Il est clair que chaque coin brille. Ce sont des éclats dus à une perte de contact. C'est normal de changer d'avis. Battez en brèche dès qu'ils apparaissent. Choisissez le bon endroit à ce moment-là et vous vous habituerez. Créez de petits déversements au fil du temps.
+⸎
+
+</p>
+
+        </div>
+        
+    
+<div class="button-container">
+    <img src="openvideo.gif" alt="Open Video" class="open-video-button" onclick="window.location.href='꧁chair꧂/𓂯disque (boîte)/𑙦rendus/𓂯disque_𑙦rendu_principal.mp4'">
+</div>
+
+    <footer>
+        <a href="https://linktr.ee/cak333" target="_blank">linktr.ee/cak333</a>
+    </footer>
+   
+</body>
+</html>
